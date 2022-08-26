@@ -1,0 +1,138 @@
+*{
+padding: 0;
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+}
+main{
+background-color: rgb(237, 239, 243);
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.container{
+background:  rgb(244, 246, 246);
+border-radius: 10px;
+-webkit-box-shadow: 10px 10px 5px 0px rgba(204,188,204,1);
+-moz-box-shadow: 10px 10px 5px 0px rgba(204,188,204,1);
+box-shadow: 10px 10px 5px 0px rgba(204,188,204,1);
+}
+.img-pc{
+display: none;
+}
+.img-mobil{
+width: 19.125rem;
+height: 14.125rem;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+.imgs{
+
+}
+.descripcion{
+width: 19.125rem;
+height: 20.125rem;
+display: flex;
+flex-direction: column;
+gap: 0.625rem;
+padding: 0.9375rem 1.5625rem 1.5625rem 1.5625rem;
+box-sizing: border-box;
+font-size: 0.9375rem;
+}
+.descripcion article{
+font-size: 0.8125rem;
+color: hsl(228, 12%, 48%) ;
+}
+.producto{
+color: hsl(228, 12%, 48%) ;
+font-size:0.6875rem;
+}
+.descripcion p b {
+color: hsl(158, 36%, 37%) ; 
+}
+.precio_viejo{
+font-size: 0.6875rem;
+color: hsl(228, 12%, 48%) ;
+text-decoration-line: line-through;
+}
+.precio_nuevo{
+font-size: 26px;
+font-weight: 900;
+color: hsl(158, 36%, 37%) ;
+font-family: 'Fraunces', serif;
+}
+.precio p{
+display: inline;
+margin: 10px ;
+}
+.boton{
+background: hsl(158, 36%, 37%) ; 
+color: rgb(244, 246, 246);
+height: 45px;
+width:auto;
+margin-top: 0.625rem;
+border-radius: 0.5625rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+h1{
+font-family: 'Fraunces', serif;
+font-weight: 900;
+}
+.comprar{
+margin-right: 0.625rem;
+}
+.boton:hover{
+background: hsl(158, 36%, 24%) ; 
+transition: 1s;
+}
+article{
+line-height: 0.9375rem;
+font-family: 'Montserrat', sans-serif;
+font-weight: 100;
+}
+@media screen and (min-width:750px){
+
+.img-mobil{
+display: none;
+}
+
+.imgs{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.img-pc{
+display: flex;
+width: 19.125rem;
+height: 25rem;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+.container{
+    display: flex;
+    background:  rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: none;
+    width: 600px;
+    height: 450px;
+
+}
+.descripcion{
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+padding: 24px 24px 0px ;
+height:  400px;
+gap: 30px;
+}
+article{
+line-height: 20px;
+}
+.producto{
+    margin-top: 5px;
+}
+
+}
